@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0f0f0, #00FF00);
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Стили для коллажа (вставляем сюда) */
+.image-text-collage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.collage-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.collage-item img {
+  width: 50%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.collage-item p {
+  width: 50%;
+  text-align: justify;
+}
+
+.collage-item.reversed {
+  flex-direction: row-reverse;
+}
+
+.collage-item.reversed img {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .collage-item {
+    flex-direction: column;
+  }
+
+  .collage-item img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .collage-item p {
+    width: 100%;
+  }
+
+  .collage-item.reversed {
+    flex-direction: column;
+  }
+
+  .collage-item.reversed img {
+    margin-left: 0;
+  }
+}
